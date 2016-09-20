@@ -1,0 +1,60 @@
+*{
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body{
+	min-height: 100vh;
+}
+
+div{
+	&.container-fluid{
+		padding: 0;
+	}
+
+	&.container{
+		padding: 0;
+	}
+}
+
+button{
+	&.navbar-toggler{
+		line-height: 2;
+		color: white;
+	}
+
+	&.btn{
+		margin: 8px 0;
+		padding: 4px 8px;
+	}
+}
+
+.carousel{
+	height: 300px;
+}
+
+a{
+	&.left,
+	&.right{
+		&.carousel-control{
+			background-image: none;
+
+				.icon-prev,
+				.icon-next{
+					color: black;
+				}
+			
+		}
+	}
+}
+
+input{
+	&#search-input{
+		&.form-control{
+			margin: 8px 0;
+			padding: 4px 8px;
+		}
+	}
+}
