@@ -1,3 +1,7 @@
+$white: white;
+$black: #373a3c;
+$transparent: rgba(255, 255, 255, 0.5);
+
 *{
 	box-sizing: border-box;
 	padding: 0;
@@ -17,22 +21,164 @@ div{
 	&.container{
 		padding: 0;
 	}
+
+	.dropdown{
+		.collapse{
+			border-top: 1px solid $transparent;
+			border-bottom: 1px solid $transparent;
+		}
+	}
 }
 
-button{
-	&.navbar-toggler{
-		line-height: 2;
-		color: white;
+.float-right{
+	float: right;
+}
+
+
+.navbar{
+	button{
+		&.navbar-toggler{
+			line-height: 2;
+			color: white;
+			border: 0;
+		}
+
+		&.btn{
+			margin: 8px 0;
+			padding: 4px 8px;
+		}
 	}
 
-	&.btn{
-		margin: 8px 0;
+	#basket{
+
+		padding: 8px 12px;
+		margin-right: 5px;
+
+		height: 58px;
+
+		img{
+			margin-top: 10px;
+			width: 20px;
+			height: 20px;
+		}
+	}
+}
+
+
+#sign-in,
+#sign-up{
+
+	text-align: center;
+
+	span{
+		color: $transparent;
+	}
+}
+
+
+#sign-in-form{
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 166px;
+
+	.modal-header{
+		padding: 5px;
+		border: 0;
+
+		.modal-title{
+			text-align: center;
+		}
+
+		.close{
+			color: $transparent;
+		}
+	}
+
+	.modal-content{
+		background-color: $black;
+		color: $transparent;
+	}
+	
+	label{
+		margin: 0;
+	}
+
+	.form-control{
 		padding: 4px 8px;
+	}
+
+	.forgotten-link{
+		display: block;
+		font-size: 10px;
+		text-align: right;
+	}
+
+	.btn{
+		margin-top: 16px;
+	}
+}
+
+#sign-up-form{
+	margin: 0 auto;
+	width: 80%;
+	padding-top: 109px;
+
+	.modal-header{
+		padding: 5px;
+		border: 0;
+
+		.modal-title{
+			text-align: center;
+		}
+
+		.close{
+			color: $transparent;
+		}
+	}
+
+	.modal-content{
+		background-color: $black;
+		color: $transparent;
+	}
+	
+	label{
+		margin: 8px 0 0 0;
+	}
+
+	.form-control{
+		padding: 4px 8px;
+	}
+
+
+	.form-check{
+		margin-top: 16px;
+		.form-check-label{
+			margin: 0;  
+		}
+
+		.form-check-input{
+			margin-right: 5px;
+		}
+	}
+
+	
+
+	.forgotten-link{
+		display: block;
+		font-size: 10px;
+	}
+
+	.btn{
+		margin-top: 16px;
 	}
 }
 
 .carousel{
 	height: 300px;
+
+	img{
+		max-height: 300px;
+	}
 }
 
 a{
@@ -57,4 +203,42 @@ input{
 			padding: 4px 8px;
 		}
 	}
+}
+
+footer{
+	background-color: $black;
+	color: $transparent;
+
+	h6{
+		font-weight: bold;
+		text-decoration: underline;
+	}
+
+	.container{
+		padding: 10px;
+	}
+
+	.footer-list{
+		list-style-type: none;
+
+		.footer-list-link{
+			font-size: 14px;
+			color: $transparent;
+		}
+	}
+
+	hr{
+		width: 100%;
+		background-color: $transparent;
+	}
+
+	#payment-methods{
+		#payment-title{
+			text-align: center;
+		}
+
+		img{
+		}
+	}
+	
 }
