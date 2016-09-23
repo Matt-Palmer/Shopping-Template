@@ -22,8 +22,58 @@
 					&#9776;
 				</button>
 
-				<a id="basket" href="#" class="float-right"><img src="images/shopping-basket.png"></a>
+				<a id="basket" href="#" class="float-right" data-toggle="modal" data-target="#basket-items"><img src="images/shopping-basket.png"><span class="tag tag-primary tag-pill">2</span></a>
 					
+			</div>
+
+			<div class="modal" id="basket-items">
+				<div class="modal-content">
+					<div class="modal-header">
+
+				     	<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				        	<span aria-hidden="true">&times;</span>
+				       	</button>
+				       	<h4 class="modal-title">Your Items</h4>
+				     </div>
+
+					<div class="card">
+
+						<div class="card-block">
+
+							<img src="images/mens-shirt-1.jpg">
+
+							<ul>
+								<li>Qty: 1</li>
+								<li>Item No: 1761</li>
+								<li>Color: <span class="color-sample" style="background-color: blue;"></span></li>
+								<li>Size: L</li>
+							</ul>
+
+							<div><a href="#">Remove Item</a></div>
+						</div>
+						
+					</div>
+
+					<hr>
+
+					<div class="card">
+
+						<div class="card-block">
+
+							<img src="images/mens-shirt-2.jpg">
+
+							<ul>
+								<li>Qty: 1</li>
+								<li>Item No: 9348</li>
+								<li>Color: <span class="color-sample" style="background-color: lightblue;"></span></li>
+								<li>Size: L</li>
+							</ul>
+
+							<div><a href="#">Remove Item</a></div>
+						</div>
+						
+					</div>
+				</div>
 			</div>
 
 			<div class="container">
@@ -61,15 +111,13 @@
 						</li>
 					</ul>
 
-					<div class="form-group row">
+					<div class="input-group">
 						
-						<div class="col-xs-12">
-							<input class="form-control" type="search" placeholder="search..." id="search-input">
+						<input class="form-control" type="search" placeholder="search..." id="search-input" aria-describedby="search-button">
+						<div class="input-group-btn">
+							<button class="btn btn-secondary" type="button"><span class="input-group-addon" id="search-button"><img src="images/magnifying-glass.png"></span></button>
 						</div>
-
-						<div class="col-xs-12">
-							<button class="btn btn-secondary btn-block" type="button">Search</button>
-						</div>
+						
 					</div>
 
 					<div id="sign-in">
